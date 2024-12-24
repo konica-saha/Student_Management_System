@@ -17,7 +17,7 @@
                                     <tr>
                                         <th>#</th>
                                         <th>Name</th>
-                                        <th>Course Id</th>
+                                        <th>Course</th>
                                         <th>Start Date</th>
                                         <th>Actions</th>
                                     </tr>
@@ -27,7 +27,7 @@
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->name }}</td>
-                                        <td>{{ $item->course_id }}</td>
+                                        <td>{{ $item->course->name }}</td>
                                         <td>{{ $item->start_date }}</td>
  
                                         <td>

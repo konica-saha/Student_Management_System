@@ -10,7 +10,7 @@
         <label>Name</label></br>
         <input type="text" name="name" id="name" class="form-control"></br>
 
-        <label>Course Id</label></br>
+        <label>Course</label></br>
         <!-- <input type="text" name="course_id" id="course_id" class="form-control"></br> -->
         <select name="course_id" id="course_id" class="form-control">
           @foreach($courses as $course)

@@ -10,7 +10,7 @@
         <div class="card-body">
        <h5 class="card-title">Name : {{ $courses->name }}</h5> <!--table collum name, add. -->
         <p class="card-text">syllabus : {{ $courses->syllabus }}</p>
-        <p class="card-text">duration : {{ $courses->duration }}</p>
+        <p class="card-text">duration : {{ $courses->duration() }}</p>
   </div>
        
     </hr>

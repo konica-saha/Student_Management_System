@@ -5,19 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Batch extends Model
+class Payment extends Model
 {
-    protected $table = 'batches';
+    protected $table = 'payments';
     protected $primarykey = 'id';
     protected $fillable = [
-        'name',
-        'course_id',
-        'start_date'
+        'enrollment_id',
+        'Paid_date',
+        'amount'
     ];
-
     use HasFactory;
 
-    public function course(){
-        return $this->belongsTo(Course::class);
+    public function enrollment(){
+        return $this->belongsTo(Enrollment::class);
     }
 }
